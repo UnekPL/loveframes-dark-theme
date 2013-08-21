@@ -3,7 +3,7 @@
 	-- Copyright (c) 2013 Kenny Shields --
 --]]------------------------------------------------
 
-local dir = (...):sub(0, -5)
+local dir = (...):sub(0, -6)
 local path = string.gsub(dir, "/", "%.")
 
 -- color utility
