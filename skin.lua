@@ -38,6 +38,10 @@ local basecolor2  = basecolor:modup(5)
 local bordercolor = basecolor:modup(10)
 local accentcolor = rgb(0, 175, 0)
 
+-- directives
+skin.directives = {}
+skin.directives.text_default_color = textcolor
+
 -- controls
 skin.controls = {}
 
