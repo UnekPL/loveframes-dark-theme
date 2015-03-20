@@ -3,11 +3,13 @@
 	-- Copyright (c) 2013 Kenny Shields --
 --]]------------------------------------------------
 
-local dir = (...):sub(0, -6)
-local path = string.gsub(dir, "/", "%.")
+local path = string.sub(..., 1, string.len(...) - string.len(".skins.Dark.skin"))
+local loveframes = require(path .. ".libraries.common")
+local dir = string.gsub(string.sub(...,1,string.len(...) - string.len("/skin")), "%.","/")
+
 
 -- color utility
-require(path .. ".utils.color")
+require(dir .. ".utils.color")
 
 -- skin table
 local skin = {}
